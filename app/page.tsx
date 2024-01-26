@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/Header";
 import LastOrders from "@/components/Orders/LastOrders";
 import TopPlatform from "@/components/Platform/TopPlatform";
