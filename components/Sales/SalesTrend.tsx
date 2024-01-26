@@ -1,3 +1,4 @@
+"use client";
 import { SALES_AMOUNT, SALES_CHART } from "@/data/sales";
 import Image from "next/image";
 import CalendarDropdown from "./CalendarDropdown";
