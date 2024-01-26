@@ -1,21 +1,24 @@
-"use client";
-
 import Header from "@/components/Header";
 import LastOrders from "@/components/Orders/LastOrders";
 import TopPlatform from "@/components/Platform/TopPlatform";
 import SalesTrend from "@/components/Sales/SalesTrend";
-import FinancialStatistics from "@/components/Statistics/FinancialStatistics";
 import { useAppSelector } from "@/lib/hooks";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const isOpen = useAppSelector((state) => state.sidebar.isOpen);
-  const [hid, setHide] = useState("hidden");
-  const [show, setShow] = useState("");
-  setTimeout(() => {
-    setHide("");
-    setShow("hidden");
-  }, 2000);
+  const [hid, setHide] = useState<string>("hidden");
+  const [show, setShow] = useState<string>("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setHide("");
+      setShow("hidden");
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <main
       className={`${
