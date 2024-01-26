@@ -31,7 +31,9 @@ export default function Home() {
       }`}
     >
       <Header className={`${hid}`} />
-      <div className={`absolute top-[50%] left-[50%] ${show}`}>
+      <div
+        className={`absolute top-[50%] left-[50%] ${show} dark:bg-[#4a5562]`}
+      >
         <iframe src="/assets/1476.gif " />
       </div>
 
