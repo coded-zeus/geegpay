@@ -1,8 +1,10 @@
 "use client";
+import React from "react";
 import Header from "@/components/Header";
 import LastOrders from "@/components/Orders/LastOrders";
 import TopPlatform from "@/components/Platform/TopPlatform";
 import SalesTrend from "@/components/Sales/SalesTrend";
+import FinancialStatistics from "@/components/Statistics/FinancialStatistics";
 import { useAppSelector } from "@/lib/hooks";
 import { useState, useEffect } from "react";
 
